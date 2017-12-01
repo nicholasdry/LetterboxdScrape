@@ -1,24 +1,3 @@
-Wonder Woman
-Ghost in the Shell
-Goon: Last of the Enforcers
-Valerian and the City of a Thousand Planets
-Fate
-The Magnificent Seven
-Happiness
-Suburbicon
-Cold Fish
-August Underground
-Begotten
-Lake Mungo
-The Shape of Water
-The Deadly Spawn
-The Act of Killing
-Annabelle: Creation
-Woodshock
-A Quiet Place
-Wall Street
-Beetlejuice
-RoboCop
 The Fly
 The Princess Bride
 Burn After Reading
@@ -40,27 +19,27 @@ All the Boys Love Mandy Lane
 Smokin' Aces
 Capote
 Sideways
-Wind River
-Annihilation
-The Zero Theorem
-Kingsman: The Golden Circle
-Ingrid Goes West
-The End of the Tour
-The Modern Ocean
-The Bad Batch
-Song to Song
-The Transfiguration
-Rakka
-Detroit
-The Beguiled
-Gattaca
-My Cousin Rachel
-Rope
-Berlin Syndrome
-House
-The Intouchables
-Never Let Me Go
-Mother
+Wonder Woman
+Ghost in the Shell
+Goon: Last of the Enforcers
+Valerian and the City of a Thousand Planets
+Fate
+The Magnificent Seven
+Happiness
+Suburbicon
+Cold Fish
+August Underground
+Begotten
+Lake Mungo
+The Shape of Water
+The Deadly Spawn
+The Act of Killing
+Annabelle: Creation
+Woodshock
+A Quiet Place
+Wall Street
+Beetlejuice
+RoboCop
 Garden State
 Blood Diamond
 Mr. Nobody
@@ -82,6 +61,27 @@ Metropolis
 Marrowbone
 Thoroughbreds
 Isle of Dogs
+Wind River
+Annihilation
+The Zero Theorem
+Kingsman: The Golden Circle
+Ingrid Goes West
+The End of the Tour
+The Modern Ocean
+The Bad Batch
+Song to Song
+The Transfiguration
+Rakka
+Detroit
+The Beguiled
+Gattaca
+My Cousin Rachel
+Rope
+Berlin Syndrome
+House
+The Intouchables
+Never Let Me Go
+Mother
 The Endless
 Carol
 Pacific Rim: Uprising
@@ -103,27 +103,6 @@ A Ghost Story
 Dunkirk
 Kedi
 The Snowman
-Embrace of the Serpent
-He Took His Skin Off for Me
-The Handmaiden
-The Fits
-Almost Famous
-Castaway on the Moon
-A Tale of Two Sisters
-Pan's Labyrinth
-The Vault of Horror
-Dark Sea
-Leatherface
-The Bye Bye Man
-Emelie
-Possession
-Eyes Of Fire
-The Reflecting Skin
-A Field in England
-Häxan
-Bite
-Wild Zero
-A Girl Walks Home Alone at Night
 The Dinner
 Better Watch Out
 Colossal
@@ -145,6 +124,27 @@ Loving
 Silence
 Under the Shadow
 Paterson
+Embrace of the Serpent
+He Took His Skin Off for Me
+The Handmaiden
+The Fits
+Almost Famous
+Castaway on the Moon
+A Tale of Two Sisters
+Pan's Labyrinth
+The Vault of Horror
+Dark Sea
+Leatherface
+The Bye Bye Man
+Emelie
+Possession
+Eyes Of Fire
+The Reflecting Skin
+A Field in England
+Häxan
+Bite
+Wild Zero
+A Girl Walks Home Alone at Night
 Mallrats
 Cronos
 The Cable Guy
@@ -166,27 +166,6 @@ Ed Wood
 Fear and Loathing in Las Vegas
 The Fifth Element
 The Green Mile
-Paths of Glory
-Unforgiven
-Twelve Monkeys
-The Devils
-The Usual Suspects
-Being John Malkovich
-Maniac
-Bull Durham
-Out of Africa
-The Howling
-Driving Miss Daisy
-Altered States
-Fright Night
-The Color Purple
-Cinema Paradiso
-Raging Bull
-Marathon Man
-THX 1138
-Serpico
-Dirty Harry
-The French Connection
 The Great Dictator
 Amusement
 31
@@ -208,27 +187,27 @@ The Rocketeer
 A League of Their Own
 Ringu
 Malcolm X
-Trance
-Natural Born Killers
-Side Effects
-Sing Street
-Trance
-Circle
-Antiviral
-The 'Burbs
-The Brood
-Audition
-Mommy
-A Serious Man
-Vampyr
-The Endless Summer
-Submarine
-It's Such a Beautiful Day
-Spirited Away
-The Seventh Seal
-The Skin I Live In
-Le Samouraï
-Caché
+Paths of Glory
+Unforgiven
+Twelve Monkeys
+The Devils
+The Usual Suspects
+Being John Malkovich
+Maniac
+Bull Durham
+Out of Africa
+The Howling
+Driving Miss Daisy
+Altered States
+Fright Night
+The Color Purple
+Cinema Paradiso
+Raging Bull
+Marathon Man
+THX 1138
+Serpico
+Dirty Harry
+The French Connection
 Edward Scissorhands
 Boogie Nights
 Reservoir Dogs
@@ -250,6 +229,27 @@ Kidnap
 Only God Forgives
 The Killing
 The African Queen
+Trance
+Natural Born Killers
+Side Effects
+Sing Street
+Trance
+Circle
+Antiviral
+The 'Burbs
+The Brood
+Audition
+Mommy
+A Serious Man
+Vampyr
+The Endless Summer
+Submarine
+It's Such a Beautiful Day
+Spirited Away
+The Seventh Seal
+The Skin I Live In
+Le Samouraï
+Caché
 Compliance
 Donnie Brasco
 The Double

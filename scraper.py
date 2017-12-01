@@ -33,11 +33,11 @@ else:
     raise Exception("Please input a username.")
 
 # Again, global output file for the threads.
-output_file = open("{0}-watchlist.txt".format(username), "w")
+output_file = None
 
 # Class to maintain and implement the Threading Module.
-class WatchlistThread(threading.Thread):
-    def __init__(self, odd):
+class TargetThreads(threading.Thread):
+    def __init__(self, odd, target):
         # Super Constructor call
         threading.Thread.__init__(self)
         # Since we are running and odd page and even page thread, here is our flag.
@@ -46,54 +46,58 @@ class WatchlistThread(threading.Thread):
             self.name = "Odd Thread"
         else:
             self.name = "Even Thread"
+        # Determines if we are looking at watchlist or filmlist.
+        self.target = target
+        print("We are looking at {0}".format(self.target))
+        cont = input("> ")
     def run(self):
         # Executes when we call .start()
         print("Starting {0}".format(self.name))
-        begin_scrape(self.odd)
+        self.begin_scrape(self.odd)
         print("Exiting {0}".format(self.name))
+    def begin_scrape(self, odd):
+        global movies
 
+        if odd:
+            ctr = 1
+        else:
+            ctr = 2
 
-def begin_scrape(odd):
-    global movies
+        while True:
+            print("Viewing Page {0}".format(ctr))
+            # All URLs are formatted the same way.
+            base_url = "http://www.letterboxd.com/{0}/{1}/page/{2}".format(username, self.target, ctr)
+            url = urlopen(base_url)
+            soup = BeautifulSoup(url, "html.parser")
+            
 
-    if odd:
-        ctr = 1
-    else:
-        ctr = 2
+            poster_containers = soup.findAll('li', {'class': 'poster-container'})
+            if len(poster_containers) == 0:
+                # We have reached the end of their watchlist, break.
+                break
 
-    while True:
-        print("Viewing Page {0}".format(ctr))
-        # All URLs are formatted the same way.
-        base_url = "http://www.letterboxd.com/{0}/watchlist/page/{1}".format(username, ctr)
-        url = urlopen(base_url)
-        soup = BeautifulSoup(url, "html.parser")
-        
-
-        poster_containers = soup.findAll('li', {'class': 'poster-container'})
-        if len(poster_containers) == 0:
-            # We have reached the end of their watchlist, break.
-            break
-
-        for poster in poster_containers:
-            # Requires some nice parsing here. 
-            movie_title = str(poster).split("alt=\"")[1].split("\"")[0]
-            output_file.write("{0}\n".format(movie_title))
-        
-        ctr += 2
+            for poster in poster_containers:
+                # Requires some nice parsing here. 
+                movie_title = str(poster).split("alt=\"")[1].split("\"")[0]
+                output_file.write("{0}\n".format(movie_title))
+            
+            ctr += 2
 
 # This looks at all potential options they wish to scrape, so far it's only watchlist.
 if target == "watchlist":
+    output_file = open("{0}-watchlist.txt".format(username), "w")
+elif target == "films":
+    output_file = open("{0}-filmlist.txt".format(username), "w")
 
-    try:
-        # Set thread objects.
-        threads = [WatchlistThread(True), WatchlistThread(False)]
-    except:
-        raise Exception("Could not spawn threads.")
-    
-    # Fire off threads.
-    for thread in threads:
-        thread.start()
-    # Wait for the to return and exit out.
-    for thread in threads:
-        thread.join()
+try:
+    # Set thread objects.    
+    threads = [TargetThreads(True, target), TargetThreads(False, target)]
+except:
+    raise Exception("Could not spawn threads.")
 
+# Fire off threads.
+for thread in threads:
+    thread.start()
+# Wait for the to return and exit out.
+for thread in threads:
+    thread.join()
